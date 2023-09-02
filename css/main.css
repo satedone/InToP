@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&family=Poppins:wght@400;600;700;800;900&display=swap');
+
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --blue: #3e86f5;
+    --gray: #7c7c7c;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.my_container {
+    max-width: 1200px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.header {
+    color: var(--white);
+    position: relative; /* Додаємо позицію relative для налаштування z-index */
+    z-index: 2; /* Встановлюємо z-index для шапки, щоб вона була наверху */
+    display: flex; /* Використовуємо flexbox для розміщення логотипу і меню */
+    justify-content: space-between; /* Розташовуємо логотип ліворуч, а меню праворуч */
+    align-items: center; /* Вирівнюємо елементи вертикально по центру */
+}
+
+.header__logo {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 72px;
+}
+
+.header__menu {
+    display: flex; /* Використовуємо flexbox для розміщення пунктів меню */
+}
+
+.header__menu div {
+    padding: 10px 20px; /* Задаємо відступи для кожного пункту меню */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.main {
+    background-image: url('img/background.png');
+    background-size: cover; /* Заповнюємо блок фоновим зображенням */
+    background-position: center center;
+    margin-top: -150px; /* Зміщуємо контент вгору, щоб зробити місце для шапки */
+    opacity: 80%;
+    position: relative; /* Додаємо позицію relative для налаштування z-index */
+    z-index: 1; /* Встановлюємо z-index менший, ніж у шапці, щоб шапка була наверху */
+}
+
+
+.sub {
+    
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    color: var(--gray);
+}
