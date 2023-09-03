@@ -5,7 +5,7 @@
     --black: #000000;
     --blue: #3e86f5;
     --gray: #7c7c7c;
-
+    min-width: 300px;
 }
 
 
@@ -19,7 +19,6 @@ img {
     display: block;
     width: 100%;
 }
-
 .my_container {
     max-width: 1200px;
     padding: 15px;
@@ -28,11 +27,11 @@ img {
 
 .header {
     color: var(--white);
-    position: relative; /* Додаємо позицію relative для налаштування z-index */
-    z-index: 2; /* Встановлюємо z-index для шапки, щоб вона була наверху */
-    display: flex; /* Використовуємо flexbox для розміщення логотипу і меню */
-    justify-content: space-between; /* Розташовуємо логотип ліворуч, а меню праворуч */
-    align-items: center; /* Вирівнюємо елементи вертикально по центру */
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header__logo {
@@ -41,53 +40,57 @@ img {
     font-weight: 500;
     font-size: 48px;
     line-height: 72px;
+    margin-left: 20px;
 }
 
 .header__menu {
-    display: flex; /* Використовуємо flexbox для розміщення пунктів меню */
+    display: none;
 }
 
-.header__menu div {
-    padding: 10px 20px; /* Задаємо відступи для кожного пункту меню */
+.mini_menu {
+    display: flex;
+    padding: 10px 20px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 24px;
     line-height: 36px;
+}
 
+.header__menu div {
+    padding: 10px 20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 36px;
     border: red solid 1px;
-    /* треба доробити мобільний варіант, можливо на іншому рядку  */
 }
 
 @media (min-width: 500px) {
-	.header__menu div {
-        font-size: 16px;
-        line-height: 36px;
-	}
+    .mini_menu {
+        display: none;
+    }
+    .header__menu {
+        display: flex;
+    }
 }
 
 @media (min-width: 580px) {
-	.header__menu div {
+    .header__menu {
         font-size: 24px;
         line-height: 36px;
-	}
+    }
 }
 
 .main {
-    background-image: url('img/background.png');
-    background-size: cover; /* Заповнюємо блок фоновим зображенням */
+    background-image: url('../img/background.png');
+    background-size: cover;
     background-position: center center;
-    margin-top: -150px; /* Зміщуємо контент вгору, щоб зробити місце для шапки */
+    margin-top: -250px;
     opacity: 80%;
-    position: relative; /* Додаємо позицію relative для налаштування z-index */
-    z-index: 1; /* Встановлюємо z-index менший, ніж у шапці, щоб шапка була наверху */
+    position: relative;
+    z-index: 1;
+    min-height: 500px;
 }
 
-
-.sub {
-    
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-size: 35px;
-    color: var(--gray);
-}
