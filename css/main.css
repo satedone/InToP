@@ -52,8 +52,25 @@ img {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 12px;
     line-height: 36px;
+
+    border: red solid 1px;
+    /* треба доробити мобільний варіант, можливо на іншому рядку  */
+}
+
+@media (min-width: 500px) {
+	.header__menu div {
+        font-size: 16px;
+        line-height: 36px;
+	}
+}
+
+@media (min-width: 580px) {
+	.header__menu div {
+        font-size: 24px;
+        line-height: 36px;
+	}
 }
 
 .main {
