@@ -6,8 +6,8 @@
     --blue: #3e86f5;
     --gray: #7c7c7c;
     min-width: 300px;
+    font-family: 'Poppins';
 }
-
 
 * {
     margin: 0;
@@ -35,8 +35,6 @@ img {
 }
 
 .header__logo {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 500;
     font-size: 48px;
     line-height: 72px;
@@ -48,49 +46,105 @@ img {
 }
 
 .mini_menu {
-    display: flex;
     padding: 10px 20px;
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 36px;
+    transition: background-color 0.3s, color 1s, height 0.3s, border-radius 0.3s; /* Додаємо анімацію для плавної зміни стилю */
 }
 
 .header__menu div {
     padding: 10px 20px;
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 36px;
-    border: red solid 1px;
+    /* border: red solid 1px; */
+    transition: background-color 0.3s, color 1s, height 0.3s, border-radius 0.3s; /* Додаємо анімацію для плавної зміни стилю */
 }
 
-@media (min-width: 500px) {
+.header__menu div:hover {
+    background-color: var(--white); /* Фон білий */
+    color: var(--blue); /* Текст голубий */
+    border-radius: 10px; /* Закруглення кутів 10px */
+}
+
+.mini_menu:hover {
+    background-color: var(--white); /* Фон білий */
+    color: var(--blue); /* Текст голубий */
+    border-radius: 10px; /* Закруглення кутів 10px */
+}
+
+
+
+.main {
+    background-image: url('../img/background_home.png');
+    background-size: cover;
+    background-position: top center;
+    margin-top: -250px;
+    position: relative;
+    z-index: 1;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Прозорість для зображення */
+.main::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.6); /* Кольором чорний (0, 0, 0) з прозорістю 50% (0.5) */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; /* Розміщуємо зображення за фоном */
+}
+
+.main__content {
+    max-width: 820px;
+}
+
+.title {
+    padding-top: 100px;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 150%;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    padding: 30px 50px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+
+@media (min-width: 580px) {
     .mini_menu {
         display: none;
     }
     .header__menu {
         display: flex;
     }
-}
 
-@media (min-width: 580px) {
     .header__menu {
         font-size: 24px;
         line-height: 36px;
     }
+    .title {
+        font-size: 48px;
+        line-height: 75px; 
+    }
 }
 
-.main {
-    background-image: url('../img/background.png');
-    background-size: cover;
-    background-position: center center;
-    margin-top: -250px;
-    opacity: 80%;
-    position: relative;
-    z-index: 1;
-    min-height: 500px;
+@media (min-width: 960px) {
+    .title {
+        font-size: 64px;
+        line-height: 96px; 
+    }
 }
-
