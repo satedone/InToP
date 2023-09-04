@@ -3,7 +3,7 @@
 :root {
     --white: #ffffff;
     --black: #000000;
-    --blue: #3e86f5;
+    --blue: #d6d6d6;
     --gray: #7c7c7c;
     --background:#f7f7f7;
     min-width: 300px;
@@ -207,8 +207,11 @@ img {
 .icon {
     width: 24px; /* Задайте бажаний розмір ширини */
     height: 24px; /* Задайте бажаний розмір висоти */
-    margin-right: 10x;
+    margin-right: 10px;
+
 }
+
+
 .tab-content {
     position: absolute;
     left: 0; /* Закріплюємо лівий край на початку контейнера */
@@ -273,4 +276,55 @@ img {
         display: inline;
         transition: background-color 0.3s, color 1s, height 0.3s, border-radius 0.3s; /* Додаємо анімацію для плавної зміни стилю */
     }
+}
+
+
+.gray_oval1 {
+  display: grid;
+  grid-template-columns: 40% 20% 40%;
+  gap: 15px;
+  width: 500px;
+  height: 150px;
+  border: solid #d6d6d6 2px;
+  border-radius: 25px;
+  margin: 25px 0;
+  padding: 15px;
+  align-items: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.big-icon {
+  max-width: 100%;
+  height: auto;
+}
+
+.column span {
+    font-size: 18px;
+    line-height: 24px; 
+    color: var(--gray);
+
+}
+
+.column div {
+
+    font-size: 24px;
+    line-height: 32px; 
+}
+
+.tab_content_gray {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.big_button {
+    width: 150px;
+    margin: 25px 0;
 }
