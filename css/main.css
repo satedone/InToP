@@ -3,7 +3,7 @@
 :root {
     --white: #ffffff;
     --black: #000000;
-    --blue: #d6d6d6;
+    --blue: #3e86f5;
     --gray: #7c7c7c;
     --background:#f7f7f7;
     min-width: 300px;
@@ -151,8 +151,8 @@ img {
 
 .options {
     background-color: var(--background); 
-    height: 600px;
     width: 100%;
+
 }
 
 
@@ -161,6 +161,7 @@ img {
     margin: -150px 0;
     background: var(--white);
     height: 100px;
+    margin-bottom: 500px;
 }
 .tabs::before,
 .tabs::after {
@@ -330,5 +331,47 @@ img {
 }
 
 .offers {
+    background-color: var(--background); 
+}
+
+.offer__title h2 {
     
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+    text-align: center;
+}
+
+.tree_btn {
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 0;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  width: 340px;
+  height: 66px;
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.button-group button {
+  flex: 1;
+  font-size: 18px;
+  text-align: center;
+  color: #666;
+  background-color: var(--white);
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.button-group button.active {
+  background-color: var(--blue); /* Синій колір як активної кнопки */
+  color: white;
+  border-radius: 10px;
+  
 }
