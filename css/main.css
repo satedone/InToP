@@ -124,54 +124,6 @@ img {
     line-height: 150%;
 }
 
-
-.options {
-    background-color: var(--background); 
-    border: red solid 1px;
-    height: 400px;
-}
-
-.options__content {
-    margin-top: 10px; /* Змінюємо margin-top для відступу від верху */
-    position: relative;
-    z-index: 1;
-}
-
-.bookmarks {
-    display: flex;
-    flex-direction: row;
-    border: red solid 1px;
-}
-
-
-.bookmark1 {
-    width: 150px;
-    height: 50px;
-    background-color: var(--white); 
-    border: red solid 1px;
-
-}
-
-.bookmark2 {
-    width: 150px;
-    height: 50px;
-    background-color: var(--white); 
-    border: red solid 1px;
-
-}
-
-.bookmark_empty {
-    height: 50px;
-    background-color: var(--white); 
-    border: red solid 1px;
-    flex-grow: 1;
-
-}
-
-
-
-
-
 @media (min-width: 580px) {
     .mini_menu {
         display: none;
@@ -194,5 +146,131 @@ img {
     .title {
         font-size: 64px;
         line-height: 96px; 
+    }
+}
+
+.options {
+    background-color: var(--background); 
+    height: 600px;
+    width: 100%;
+}
+
+
+.tabs {
+    position: relative;
+    margin: -150px 0;
+    background: var(--white);
+    height: 100px;
+}
+.tabs::before,
+.tabs::after {
+    content: "";
+    display: table;
+}
+.tabs::after {
+    clear: both;
+}
+.tab {
+    float: left;
+}
+.tab-switch {
+    display: none;
+}
+.tab-label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    line-height: 100px;
+    height: 100px;
+    padding: 0 40px;
+    background: var(--white);
+    color: var(--black);
+    cursor: pointer;
+    top: 1;
+    transition: all 0.25s;
+    z-index: 1;
+
+    font-size: 18px;
+    
+    
+}
+
+.tab-label span {
+    padding-left: 15px;
+    display: none;
+}
+
+.tab-label:hover {
+    transition: top 0.25s;
+}
+
+.icon {
+    width: 24px; /* Задайте бажаний розмір ширини */
+    height: 24px; /* Задайте бажаний розмір висоти */
+    margin-right: 10x;
+}
+.tab-content {
+    position: absolute;
+    left: 0; /* Закріплюємо лівий край на початку контейнера */
+    right: 0; /* Закріплюємо правий край на кінці контейнера */
+    padding: 50px;
+    background:var(--white);
+    opacity: 0;
+
+    
+    font-size: 24px;
+
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.tab-switch:checked + .tab-label {
+    border-bottom: 0;
+    z-index: 1;
+    top: 0;
+}
+
+
+
+
+
+.tab-switch:checked + label + .tab-content {
+    z-index: 2;
+    opacity: 1;
+
+}
+
+/* закруглення  */
+
+.tab:first-child .tab-label {
+    border-top-left-radius: 25px;
+}
+
+.tab:last-child .tab-label {
+    border-top-right-radius: 25px;
+}
+
+.tab-content {
+    border-top-right-radius: 25px;
+    
+
+}
+
+.tab-switch:checked + .tab-label::before {
+    content: ''; /* Додаємо пустий контент для ::before */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px ;
+    bottom: 10px;
+    background: #d8e7fd; /* Синій колір як приклад */
+    border-radius: 25px; /* Закруглення кутів кнопки */
+    z-index: -1; /* Зміщуємо кнопку за текст */
+    
+}
+
+@media (min-width: 660px) {
+    .tab-label span {
+        display: inline;
+        transition: background-color 0.3s, color 1s, height 0.3s, border-radius 0.3s; /* Додаємо анімацію для плавної зміни стилю */
     }
 }
