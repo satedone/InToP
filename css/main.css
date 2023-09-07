@@ -298,7 +298,6 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
 }
 
 .big-icon {
@@ -310,7 +309,6 @@ img {
     font-size: 18px;
     line-height: 24px; 
     color: var(--gray);
-
 }
 
 .column div {
@@ -322,7 +320,6 @@ img {
 .tab_content_gray {
     display: flex;
     justify-content: space-between;
-
 }
 
 .big_button {
@@ -373,13 +370,11 @@ img {
   background-color: var(--blue); /* Синій колір як активної кнопки */
   color: white;
   border-radius: 10px;
-  
 }
 
 .offers__content {
     display: flex;
     justify-content: space-between;
-
 }
 
 .offer {
@@ -441,25 +436,27 @@ img {
 
 .general {
     background-color: var(--background); 
-    padding-top: 150px;
+    padding-top: 50px;
 }
 
 .general__content {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
 }
 
 .general_discription {
     padding: 35px;
-    max-width: 580px;
+    width: 100%;
+    flex: 1;
 }
 
 .general_discription h2 {
     font-size: 48px;
     line-height: 60px;
     font-weight: 600;
-    padding-bottom: 30px;
-    
+    padding-bottom: 20px;
 }
 
 .general_discription p {
@@ -469,15 +466,8 @@ img {
     color: var(--gray);
 }
 
-.general_picture img {
-    border-radius: 75px;
-    padding-left: 15px;
-    
-}
-
-.general_picture {
-    flex: 0.8;
-
+.general_picture_all {
+    flex: 1;
 }
 
 .btn_contact {
@@ -496,65 +486,69 @@ img {
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
 }
 
-.white_block1 {
-    display: flex;
-    width: 180px;
-    height: 120px;
-    background-color: white;
-    border-radius: 35px;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top: 17%;
-    left: 80%;
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+
+@media (min-width: 800px) {
+    
+    .general {
+        padding-top: 50px;
+    }
+
+    .general__content {
+        flex-direction: row;
+    }
+
+    .general_discription h2 {
+        font-size: 32px;
+        line-height: 40px;
+        padding-bottom: 20px;
+    }
+
+    .general_discription p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .btn_contact {
+        padding: 15px 0;
+    }
+
+    .btn_contact button {
+        padding: 10px 10px;
+        font-size: 16px;
+        line-height: 22px;
+    }
 }
 
-.white_block1 p {
-    color: #3e86f5;
-    font-size: 36px;
-    line-height: 48px;
-    font-weight: 600;
+@media (min-width: 1200px) {
 
-}
+    .general {
+        padding-top: 150px;
+    }
 
-.white_block1 span {
-    font-size: 18px;
-    line-height: 20px;
-    font-weight: 400;
+    .general_discription {
+        padding: 35px;
+        max-width: 580px;
+    }
 
-}
+    .general_discription h2 {
+        font-size: 48px;
+        line-height: 60px;
+        padding-bottom: 30px;
+    }
+    
+    .general_discription p {
+        font-size: 20px;
+        line-height: 36px;
+    }
 
+    .btn_contact {
+        padding: 35px 0;
+    }
 
-.white_block2 {
-    display: flex;
-    width: 180px;
-    height: 120px;
-    background-color: white;
-    border-radius: 35px;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top: -17%;
-    left: -10%;
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
-}
-
-.white_block2 p {
-    color: #3e86f5;
-    font-size: 36px;
-    line-height: 48px;
-    font-weight: 600;
-
-}
-
-.white_block2 span {
-    font-size: 18px;
-    line-height: 20px;
-    font-weight: 400;
+    .btn_contact button {
+        padding: 25px 25px;
+        font-size: 20px;
+        line-height: 26px;
+    }
 
 }
