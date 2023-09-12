@@ -162,7 +162,7 @@ img {
     margin: -150px 0;
     background: var(--white);
     height: 100px;
-    margin-bottom: 500px;
+    margin-bottom: 200px;
 }
 .tabs::before,
 .tabs::after {
@@ -1044,3 +1044,59 @@ a {
     text-decoration: none; /* Прибираємо підкреслення */
     color: inherit; /* Колір посилання спадає від батьківського елемента */
 }
+
+
+
+/* <!-- //////////////    EXAMPLE   //////////////           --> */
+/* Стилі для модального вікна */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+  position: relative;
+  border-radius: 15px;
+}
+
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Стилі для форми */
+form {
+  text-align: center;
+  padding: 20px 0;
+}
+
+form input {
+    line-height: 36px;
+    margin-bottom: 15px;
+}
+
+form label {
+    padding: 10px 0;
+}
+
+
+
+
+/* <!-- //////////////    EXAMPLE   //////////////           --> */
