@@ -883,6 +883,7 @@ div.desc {
 /* /////////REGISTRATION_BLOCK///////// */
 .registration {
     position: relative;
+    width: 90%;
     color: var(--white);
     display: flex;
     flex-direction: column;
@@ -891,6 +892,7 @@ div.desc {
     height: 550px;
     text-align: center;
     border-radius: 100px;
+
 }
 
 .registration::before {
@@ -906,6 +908,7 @@ div.desc {
     opacity: 0.5; /* Set the background image opacity to 50% */
     z-index: -1;
     border-radius: 100px;
+
 }
 
 .registration::after {
@@ -918,6 +921,7 @@ div.desc {
     position: absolute;
     z-index: -1;
     border-radius: 100px;
+    
 }
 
 
@@ -941,7 +945,7 @@ div.desc {
 }
 
 
-@media (max-width: 450px) {
+@media (max-width: 650px) {
 
     .registration p {
         padding: 20px 50px;
@@ -974,4 +978,69 @@ div.desc {
 
 }
 
+@media (max-width: 950px) {
+
+    .registration p {
+        padding: 25px 70px;
+        font-size: 24px;
+        line-height: 140%;
+    }
+
+    .registration {
+        height: 350px;
+    }
+    .registration::after {
+        border-radius: 50px;
+    }
+
+    .registration::before {
+        border-radius: 50px;
+    }
+
+    .btn_reserve {
+        border-radius: 15px;
+        padding: 15px 15px;
+        color: #3e86f5;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .testimonials {
+        padding-bottom: 50px;
+    }
+
+}
+
 /* /////////REGISTRATION_BLOCK///////// */
+
+    
+.footer__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.footer_right {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.footer_contacts {
+    display: flex;
+    align-items: center;
+    
+}
+
+.footer_contacts {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+
+a {
+    text-decoration: none; /* Прибираємо підкреслення */
+    color: inherit; /* Колір посилання спадає від батьківського елемента */
+}
