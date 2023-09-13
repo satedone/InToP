@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 
 <head>
     <meta charset="UTF-8">
@@ -15,17 +15,15 @@
     <header class="my_container header">
         <div class="header__logo">InToP</div>
         <div class="header__menu">
-            <div><a href="#offers-section" id="offers-link">Offers</a></div>
-            <div><a href="#general-section" id="general-link">General</a></div>
-            <div><a href="#contacs-section" id="contacts-link">Contacts</a></div>
-            <div><a href="#" id="languageToggle">UK</a></div>
+            <div><a href="#offers-section">Пропозиції</a></div>
+            <div><a href="#general-section">Можливості</a></div>
+            <div><a href="#contacs-section">Контакти</a></div>
         </div>
-        <!-- <div class="mini_menu">Menu</div> -->
     </header>
     <div class="main">
         <div class="main__content">
-            <h1 class="title">Smart home<br>systems</h1>
-            <div class="subtitle">Take control of your life</div>
+            <h1 class="title">Розумний<br>будинок</h1>
+            <div class="subtitle">Візьми під контроль своє життя</div>
         </div>
     </div>
 
@@ -36,11 +34,10 @@
                     <input type="radio" name="css-tabs" id="tab-1" checked class="tab-switch">
                     <label for="tab-1" class="tab-label">
                         <img src="img/apartment.svg" alt="Apartment Icon" class="icon">
-                        <span>Apartment</span>
+                        <span>Квартира</span>
                     </label>
                     <div class="tab-content">
-                        <span>You can control the lighting, temperature, and security of your apartment using your
-                            smartphone or voice commands.</span>
+                        <span>Ви можете керувати освітленням, температурою та безпекою вашої квартири за допомогою смартфона або голосових команд.</span>
 
                     </div>
                 </div>
@@ -48,11 +45,11 @@
                     <input type="radio" name="css-tabs" id="tab-2" class="tab-switch">
                     <label for="tab-2" class="tab-label">
                         <img src="img/house.svg" alt="House Icon" class="icon">
-                        <span>House</span>
+                        <span>Будинок</span>
                     </label>
                     <div class="tab-content">
-                        <span>Home automation, outdoor surveillance, and energy monitoring systems make your house more
-                            efficient and secure.</span>
+                        <span>Системи домашньої автоматизації, зовнішнього відеоспостереження та енергомоніторингу роблять ваш будинок більш
+                            ефективнішим та безпечнішим.</span>
 
                     </div>
                 </div>
@@ -60,10 +57,10 @@
                     <input type="radio" name="css-tabs" id="tab-3" class="tab-switch">
                     <label for="tab-3" class="tab-label">
                         <img src="img/office.svg" alt="Office Icon" class="icon">
-                        <span>Office</span>
+                        <span>Офіс</span>
                     </label>
-                    <div class="tab-content">Smart lighting, access control, and meeting room automation enhance
-                        productivity and energy efficiency in the workplace.
+                    <div class="tab-content">Розумне освітлення, контроль доступу та автоматизація переговорних кімнат підвищують
+                        продуктивність та енергоефективність на робочому місці.
                     </div>
                 </div>
             </div>
@@ -73,7 +70,7 @@
     <div id="offers-section" class="offers">
         <div class="my_container">
             <div class="offer__title">
-                <h2>Complex packages of offers</h2>
+                <h2>Комплексні пропозиції</h2>
             </div>
 
             <div class="tree_btn">
@@ -97,29 +94,30 @@
                             <div class="desc_sub">
                                 <div class="desc_text">
                                     <ul>
-                                        <li>Server</li>
-                                        <li>20 relays</li>
-                                        <li>5 LED controllers</li>
-                                        <li>10 sensors</li>
-                                        <li>Table controls</li>
+                                        <li>Сервер</li>
+                                        <li>20 реле</li>
+                                        <li>5 LED контроллерів</li>
+                                        <li>10 датчиків</li>
+                                        <li>Табличний дизайн</li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="btn_enroll">
-                                <button id="openModalBtn1">Enroll</button>
+                                <button id="openModalBtn1">Обрати</button>
                                 <div id="myModal" class="modal">
                                     <div class="modal-content">
                                         <span class="close">&times;</span>
-                                        <h3>Enter Your Information or <br>Call us +380973690134</h3>
+                                        <h3>Надайте данні або<br>подзвоніть +380973690134</h3>
                                         <form id="enrollmentForm" method="post">
-                                            <label for="name">Name:</label>
-                                            <input type="text" id="name" name="name" required>
-                                            <br>
-                                            <label for="phone">Phone:</label>
-                                            <input type="tel" id="phone" name="phone" required>
-                                            <br>
-                                            <button type="submit">Send</button>
-
+                                            <div class="form-align">
+                                                <label for="name">Ім'я:</label>
+                                                <input type="text" id="name" name="name" required>
+                                                
+                                                <label for="phone">Телефон:</label>
+                                                <input type="tel" id="phone" name="phone" required>
+                                                
+                                                <button type="submit">Надіслати</button>
+                                            </div>
                                         </form>
                                     </div>
                                 </div>
@@ -141,17 +139,17 @@
                             <div class="desc_sub">
                                 <div class="desc_text">
                                     <ul>
-                                        <li>Server + UPS</li>
-                                        <li>35 relays</li>
-                                        <li>10 LED controllers</li>
-                                        <li>20 sensors</li>
+                                        <li>Сервер + UPS</li>
+                                        <li>35 реле</li>
+                                        <li>10 LED контроллерів</li>
+                                        <li>20 датчиків</li>
                                         <li>Homekit</li>
-                                        <li>Personalized design</li>
+                                        <li>Персоналізований дизайн</li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="btn_enroll">
-                                <button id="openModalBtn2">Enroll</button>
+                                <button id="openModalBtn2">Обрати</button>
                             </div>
 
                         </div>
@@ -171,20 +169,20 @@
                             <div class="desc_sub">
                                 <div class="desc_text">
                                     <ul>
-                                        <li>Server + UPS</li>
-                                        <li>Wall-Tablet</li>
-                                        <li>40 relays</li>
-                                        <li>5 covers</li>
-                                        <li>10 LED controllers</li>
-                                        <li>30 sensors</li>
+                                        <li>Сервер + UPS</li>
+                                        <li>Настінн панель</li>
+                                        <li>40 реле</li>
+                                        <li>5 приводів штор</li>
+                                        <li>10 LED контроллерів</li>
+                                        <li>30 датчиків</li>
                                         <li>Homekit + Homepod</li>
-                                        <li>Video system </li>
-                                        <li>Exclusive design</li>
+                                        <li>Віденагляд</li>
+                                        <li>Ексклюзивний дизайн</li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="btn_enroll">
-                                <button id="openModalBtn3">Enroll</button>
+                                <button id="openModalBtn3">Обрати</button>
                             </div>
 
                         </div>
@@ -204,16 +202,17 @@
 
                 <div class="general_discription">
                     <h2>
-                        Smart Home
+                        Розумний будинок
                     </h2>
                     <p>
-                        The Home Assistant smart home system is the most popular Open Sourse project.
-                        In fact, it is a Linux-based operating system with advanced functionality.
-                        It combines devices with all possible protocols, brands, and capabilities in one place.
-                        All this is designed in the desired design and can be accessed from any gadget.
+                        Система розумного дому Home Assistant - найпопулярніший проект з відкритим вихідним кодом.
+                        По суті, це операційна система на базі Linux з розширеним функціоналом.
+                        Вона об'єднує в одному місці пристрої з усіма можливими протоколами, брендами та можливостями.
+                        Все це оформлено в потрібному дизайні і доступно з будь-якого гаджета.
+
                     </p>
                     <div class="btn_contact">
-                        <button id="openModalBtn4">Contact Us</button>
+                        <button id="openModalBtn4">Зв'язатися</button>
                     </div>
                 </div>
             </div>
@@ -224,7 +223,7 @@
         <div class="my_container">
             <div class="protocols__content">
                 <div class="protocol_title">
-                    <h2>Supported protocols</h2>
+                    <h2>Підтримувані протоколи</h2>
                 </div>
                 <div class="protocols_blocks">
                     <div class="white_prot_block">
@@ -235,7 +234,7 @@
                             Zigbee
                         </span>
                         <p class="prot_disc">
-                            Better wireless network. Currently 3142 devices are supported from 392 different vendors
+                            Покращена бездротова мережа. Наразі підтримується 3142 пристрої від 392 різних виробників
                         </p>
                     </div>
                     <div class="white_prot_block">
@@ -246,7 +245,7 @@
                             Wi-Fi
                         </span>
                         <p class="prot_disc">
-                            All your phones and other gadgets, as well as almost all household appliances
+                            Всі ваші телефони та інші гаджети, а також майже вся побутова техніка
                         </p>
                     </div>
                     <div class="white_prot_block">
@@ -257,7 +256,7 @@
                             Wired Cable
                         </span>
                         <p class="prot_disc">
-                            The most reliable multifunctional and multi-channel relays for controlling anything
+                            Найнадійніші багатофункціональні та багатоканальні реле для керування будь-чим
                         </p>
                     </div>
                     <div class="white_prot_block">
@@ -268,7 +267,7 @@
                             LAN-POE
                         </span>
                         <p class="prot_disc">
-                            Video surveillance, cameras, computers, TVs, servers, and everything else
+                            Відеоспостереження, камери, комп'ютери, телевізори, сервери та все інше
                         </p>
                     </div>
                     <div class="white_prot_block">
@@ -279,7 +278,7 @@
                             Bluetooth
                         </span>
                         <p class="prot_disc">
-                            Multiple remote wireless sensors and trackers
+                            Безліч віддалених бездротових датчиків і трекерів
                         </p>
                     </div>
                 </div>
@@ -290,21 +289,20 @@
     <div class="testimonials_block">
         <div class="my_container">
             <div class="testimonials_title">
-                <h2>Favorite customers</h2>
+                <h2>Наші замовники</h2>
             </div>
             <div class="testimonials">
                 <div class="testimonial-column">
                     <div class="testimonial-background testimonial-image1">
-                        <p>Absolutely thrilled with our new smart home setup! It's like living in the future. Seamless
-                            automation and convenience at its best.</p>
-                        <span>Denis Vitruk</span>
+                        <p>Система розумного будинку - це крок у майбутнє! Контроль і комфорт у кожному кутку дому.</p>
+                        <span>Денис Вітрук</span>
                     </div>
                 </div>
                 <div class="testimonial-column">
                     <div class="testimonial-background testimonial-image2">
-                        <p>Absolutely thrilled with our new smart home setup! It's like living in the future. Seamless
-                            automation and convenience at its best.</p>
-                        <span>Artem Neverof</span>
+                        <p>Ми в захваті від нашої нової системи розумного будинку! Це як жити в майбутньому. Бездоганна
+                            автоматизація та зручність у найкращому вигляді.</p>
+                        <span>Артем Неверов</span>
                     </div>
                 </div>
             </div>
@@ -312,16 +310,16 @@
     </div>
 
     <div id="contacs-section" class="registration my_container">
-        <p>Register a preview in our office or a specialist visit to your address</p>
-        <button class="btn_reserve" id="openModalBtn5">Reserve time</button>
+        <p>Запишіться на попередній перегляд в нашому офісі або на виїзд фахівця до вас додому</p>
+        <button class="btn_reserve" id="openModalBtn5">Резерв часу</button>
     </div>
     <footer class="my_container">
         <div class="footer__block">
             <div class="footer_right">© 2023 InToP<br>Smart Home Systems<br>All right reserved<br>
                 Created by Sated</div>
             <div class="footer_contacts">
-                <div>Dnipro Ukraine <br>
-                    N. Alekseenko street, 21 <br>
+                <div>Дніпро, Україна <br>
+                    вул. Н.Алексєєнко, 21 <br>
                     <a href="tel:+380973690134">+380 97 369 01 34</a><br>
                     <a href="https://t.me/sergiisat">Telegram </a><a href="viber://chat?number=%2B3803690134">Viber</a>
                 </div>

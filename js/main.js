@@ -67,40 +67,6 @@ document.addEventListener("keydown", function(event) {
 
 
 
-// TRANSLATE
-let currentLanguage = 'en';
-        
-const languageToggle = document.getElementById('languageToggle');
-const offersLink = document.getElementById('offers-link');
-const generalLink = document.getElementById('general-link');
-const contactsLink = document.getElementById('contacts-link');
-
-
-function toggleLanguage() {
-	if (currentLanguage === 'en') {
-		currentLanguage = 'uk';
-		languageToggle.textContent = 'EN'; 
-		offersLink.textContent = 'Пропозиції';
-		generalLink.textContent = 'Головне';
-		contactsLink.textContent = 'Контакти';
-	} else {
-		currentLanguage = 'en';
-		languageToggle.textContent = 'UK'; 
-		offersLink.textContent = 'Offers';
-		generalLink.textContent = 'General';
-		contactsLink.textContent = 'Contacts';
-	}
-}
-
-
-languageToggle.addEventListener('click', toggleLanguage);
-
-
-toggleLanguage();
-
-
-
-
 const form = document.querySelector('.form');
 form.addEventListener('submit', function (e){
 	e.preventDefault();

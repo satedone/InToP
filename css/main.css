@@ -7,8 +7,9 @@
     --gray: #7c7c7c;
     --background:#f7f7f7;
     min-width: 300px;
-    font-family: 'Poppins';
+    font-family: 'Montserrat';
     background-color: var(--background);
+    min-width: 375px;
 }
 
 * {
@@ -237,6 +238,7 @@ img {
 
     
     font-size: 24px;
+    line-height: 180%;
 
     border-bottom-right-radius: 25px;
     border-bottom-left-radius: 25px;
@@ -251,7 +253,7 @@ img {
 
     .tab-content {
         padding: 30px;
-        font-size: 22px;
+        font-size: 20px;
         line-height: 160%;
     }
 }
@@ -548,7 +550,6 @@ img {
 
 .btn_contact {
     padding: 35px 0;
-
 }
 
 .btn_contact button {
@@ -561,7 +562,7 @@ img {
     line-height: 26px;
     font-weight: 500;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
-
+    font-family: 'Montserrat';
 }
 
 
@@ -661,7 +662,7 @@ img {
 
 .white_prot_block {
     width: 200px; 
-    height: 280px;
+    height: 300px;
     margin-bottom: 30px;
     background-color: white;
     border-radius: 25px;
@@ -860,6 +861,7 @@ div.desc {
 
 .testimonials p {
     font-size: 20px;
+    line-height: 160%;
     text-align: center; /* Розміщення тексту по центру */
     padding: 20px; /* Відступи від країв блоку */
     max-width: 500px;
@@ -968,7 +970,7 @@ div.desc {
     padding: 20px 150px;
     font-size: 48px;
     font-weight: 600;
-    line-height: 80px;
+    line-height: 130%;
 }
 
 .btn_reserve {
@@ -983,10 +985,9 @@ div.desc {
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
 }
 
-.btn_reserve button:hover {
-    border: solid 3px white;
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.8); 
+.btn_reserve:hover {
     cursor: pointer;
+
 }
 
 @media (max-width: 650px) {
@@ -1062,7 +1063,7 @@ div.desc {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 50px;
+    padding: 50px 35px 0 35px;
 }
 
 .footer_right {
@@ -1108,7 +1109,7 @@ a {
 .modal-content {
   background-color: #fff;
   margin: 15% auto;
-  padding: 20px;
+  padding: 20px 70px;
   border: 1px solid #888;
   width: 80%;
   max-width: 400px;
@@ -1116,6 +1117,9 @@ a {
   border-radius: 15px;
 }
 
+.form-align button {
+    margin-top: 20px;
+}
 
 /* Стилі для хрестика */
 .close {
@@ -1125,7 +1129,7 @@ a {
     width: 30px; /* Задаємо ширину і висоту для створення квадратного хрестика */
     height: 30px;
     cursor: pointer;
-    font-size: 20px; /* Розмір іконки хрестика (можете змінити за потребою) */
+    font-size: 25px; /* Розмір іконки хрестика (можете змінити за потребою) */
     
 }
 
@@ -1157,3 +1161,7 @@ form label {
 /* <!-- //////////////    EXAMPLE   //////////////           --> */
 
 
+.form-align {
+    display: flex;
+    flex-direction: column;
+}
