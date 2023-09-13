@@ -1,24 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800&family=Jost:wght@400;600;700&family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap');
 
-
-body {
-    background-image: url('../img/background_home.png');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-/* Медіа-запит для горизонтальної орієнтації */
-@media screen and (orientation: landscape) {
-    body {
-        background-size: 100% auto;
-        /* Інші стилі для горизонтальної орієнтації */
-    }
-}
-
-
-
-
 :root {
     --white: #ffffff;
     --black: #000000;
@@ -26,7 +7,7 @@ body {
     --gray: #7c7c7c;
     --background:#f7f7f7;
     min-width: 300px;
-    font-family: 'Montserrat';
+    font-family: 'Poppins';
     background-color: var(--background);
 }
 
@@ -175,6 +156,10 @@ img {
         font-size: 64px;
         line-height: 96px; 
     }
+    .header__menu div {
+        padding: 10px 20px;
+    }
+
 }
 
 .options {
@@ -402,7 +387,8 @@ img {
 }
 
 .button-group {
-  display: flex;
+  display: none;
+  /* display: flex; */
   justify-content: space-between;
   width: 340px;
   height: 66px;
@@ -516,6 +502,7 @@ img {
 }
 
 .resp_blocks {
+    padding-top: 40px;
     display: flex;
     flex-wrap: wrap;
 
@@ -561,6 +548,7 @@ img {
 
 .btn_contact {
     padding: 35px 0;
+
 }
 
 .btn_contact button {
@@ -573,6 +561,7 @@ img {
     line-height: 26px;
     font-weight: 500;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+
 }
 
 

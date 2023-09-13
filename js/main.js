@@ -17,25 +17,14 @@ buttons.forEach((button) => {
 buttons[0].classList.add("active");
 
 
-
-
-
-
-
-
-
-
-
-
-
 // Отримайте необхідні елементи для всіх трьох кнопок і модального вікна
-var modal = document.getElementById("myModal");
-var btn1 = document.getElementById("openModalBtn1");
-var btn2 = document.getElementById("openModalBtn2");
-var btn3 = document.getElementById("openModalBtn3");
-var btn4 = document.getElementById("openModalBtn4");
-var btn5 = document.getElementById("openModalBtn5");
-var span = document.getElementsByClassName("close")[0];
+let modal = document.getElementById("myModal");
+let btn1 = document.getElementById("openModalBtn1");
+let btn2 = document.getElementById("openModalBtn2");
+let btn3 = document.getElementById("openModalBtn3");
+let btn4 = document.getElementById("openModalBtn4");
+let btn5 = document.getElementById("openModalBtn5");
+let span = document.getElementsByClassName("close")[0];
 
 // Функція для відкриття модального вікна
 function openModal() {
@@ -72,6 +61,44 @@ document.addEventListener("keydown", function(event) {
 });
 
 // "use strict"
+
+
+
+
+
+
+// TRANSLATE
+let currentLanguage = 'en';
+        
+const languageToggle = document.getElementById('languageToggle');
+const offersLink = document.getElementById('offers-link');
+const generalLink = document.getElementById('general-link');
+const contactsLink = document.getElementById('contacts-link');
+
+
+function toggleLanguage() {
+	if (currentLanguage === 'en') {
+		currentLanguage = 'uk';
+		languageToggle.textContent = 'EN'; 
+		offersLink.textContent = 'Пропозиції';
+		generalLink.textContent = 'Головне';
+		contactsLink.textContent = 'Контакти';
+	} else {
+		currentLanguage = 'en';
+		languageToggle.textContent = 'UK'; 
+		offersLink.textContent = 'Offers';
+		generalLink.textContent = 'General';
+		contactsLink.textContent = 'Contacts';
+	}
+}
+
+
+languageToggle.addEventListener('click', toggleLanguage);
+
+
+toggleLanguage();
+
+
 
 
 const form = document.querySelector('.form');
