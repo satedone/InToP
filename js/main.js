@@ -28,24 +28,71 @@ buttons[0].classList.add("active");
 
 
 
-// Отримайте необхідні елементи
+// Отримайте необхідні елементи для всіх трьох кнопок і модального вікна
 var modal = document.getElementById("myModal");
-var btn = document.getElementById("openModalBtn");
+var btn1 = document.getElementById("openModalBtn1");
+var btn2 = document.getElementById("openModalBtn2");
+var btn3 = document.getElementById("openModalBtn3");
+var btn4 = document.getElementById("openModalBtn4");
+var btn5 = document.getElementById("openModalBtn5");
 var span = document.getElementsByClassName("close")[0];
 
-// Відкриття модального вікна при натисканні на кнопку
-btn.onclick = function() {
+// Функція для відкриття модального вікна
+function openModal() {
   modal.style.display = "block";
 }
 
-// Закриття модального вікна при натисканні на "x"
-span.onclick = function() {
+// Функція для закриття модального вікна
+function closeModal() {
   modal.style.display = "none";
 }
+
+// Додайте обробники подій для всіх трьох кнопок
+btn1.onclick = openModal;
+btn2.onclick = openModal;
+btn3.onclick = openModal;
+btn4.onclick = openModal;
+btn5.onclick = openModal;
+
+// Закриття модального вікна при натисканні на "x"
+span.onclick = closeModal;
 
 // Закриття модального вікна при натисканні на поза вікном
 window.onclick = function(event) {
   if (event.target == modal) {
-    modal.style.display = "none";
+    closeModal();
   }
+}
+
+// Додайте обробник подій для клавіші "ESC"
+document.addEventListener("keydown", function(event) {
+  if (event.key === "Escape") {
+    closeModal();
+  }
+});
+
+// "use strict"
+
+
+const form = document.querySelector('.form');
+form.addEventListener('submit', function (e){
+	e.preventDefault();
+	sendMessage(form);
+})
+
+async function sendMessage(form) {
+	const formData = new FormData(form);
+	if (formData) {
+		const url = './sendmessage.php';
+		const response = await fetch(url, {
+			method: "POST", 
+			body: formData
+		});
+		if (response.ok){
+			form.reset();
+			alert('Form sent!');
+		}else{
+			alert('Error');
+		}
+	}
 }
