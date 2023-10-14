@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Розумний будинок InToP">
+    <meta property="og:description" content="Візьми під контроль своє життя">
+    <meta property="og:image" content="img/meta.png">
     <title>InToP</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
@@ -11,9 +14,22 @@
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
 </head>
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z0E27XESET"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-Z0E27XESET');
+</script>
+
+
 <body>
     <header class="my_container header">
-        <div class="header__logo">InToP</div>
+        <div class="header__logo">
+            <a href="/">InToP</a>
+        </div>
         <div class="header__menu">
             <div><a href="#offers-section">Пропозиції</a></div>
             <div><a href="#general-section">Можливості</a></div>
@@ -37,7 +53,12 @@
                         <span>Квартира</span>
                     </label>
                     <div class="tab-content">
-                        <span>Ви можете керувати освітленням, температурою та безпекою вашої квартири за допомогою смартфона або голосових команд.</span>
+                        <span>Перше, що стає розумним у квартирі це світло.
+                            Також обов’язковими елементами вважаються датчики витоку, руху, температури та відкриття.
+                            Додатково в систему легко інтегруються штори, опалення, клімат.
+                            <br>Взагалі то, розумний будинок - це перш за все зручність. Тобто можливість віддалено
+                            керувати домашніми пристроями, контролювати та автоматизовувати.
+                        </span>
 
                     </div>
                 </div>
@@ -48,8 +69,11 @@
                         <span>Будинок</span>
                     </label>
                     <div class="tab-content">
-                        <span>Системи домашньої автоматизації, зовнішнього відеоспостереження та енергомоніторингу роблять ваш будинок більш
-                            ефективнішим та безпечнішим.</span>
+                        <span>В приватному будинку можливостей для інтеграції Smart Home Systems набагато більше. Зручне
+                            та віддалене керування світлом, воротами, шторами. Автоматизація опалення, клімату та
+                            енергоощадження. Інтеграція камер до єдиної системи.
+                            <br>Приватний будинок під повним контролем, віддалено та з будь-якого пристрою.
+                        </span>
 
                     </div>
                 </div>
@@ -59,11 +83,15 @@
                         <img src="img/office.svg" alt="Office Icon" class="icon">
                         <span>Офіс</span>
                     </label>
-                    <div class="tab-content">Розумне освітлення, контроль доступу та автоматизація переговорних кімнат підвищують
-                        продуктивність та енергоефективність на робочому місці.
+                    <div class="tab-content">
+                        <span>Офіс під контролем адміністратора або власника. Безпека за допомогою інтегрованих камер,
+                            встановлених датчиків відкриття, витоку та диму. Забезпечення контролю СО2, щоб люди
+                            працювали зі свіжим повітрям та автоматичною роботою вентиляції. Опалення та кондиціонування
+                            керується віддалено. Багатокористувацький доступ. </span>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 
@@ -83,108 +111,118 @@
             <div class="resp_blocks">
                 <div class="responsive">
                     <div class="gallery">
-                        <div class="gallery_img">
-                            <img src="img/essential.png" alt="Cinque Terre" width="600" height="400">
-                        </div>
-                        <div class="desc">
-                            <div class="desc_head">
-                                <p>Essential</p>
-                                <p>999 $</p>
+                        <div class="sumimgdesc">
+                            <div class="gallery_img">
+                                <img src="img/essential.png" alt="Cinque Terre" width="600" height="400">
                             </div>
-                            <div class="desc_sub">
-                                <div class="desc_text">
-                                    <ul>
-                                        <li>Сервер</li>
-                                        <li>20 реле</li>
-                                        <li>5 LED контроллерів</li>
-                                        <li>10 датчиків</li>
-                                        <li>Табличний дизайн</li>
-                                    </ul>
+                            <div class="desc">
+                                <div class="desc_head">
+                                    <p>Essential</p>
+                                    <p>1 499 $</p>
                                 </div>
-                            </div>
-                            <div class="btn_enroll">
-                                <button id="openModalBtn1">Обрати</button>
-                                <div id="myModal" class="modal">
-                                    <div class="modal-content">
-                                        <span class="close">&times;</span>
-                                        <h3>Надайте данні або<br>подзвоніть +380973690134</h3>
-                                        <form id="enrollmentForm" method="post">
-                                            <div class="form-align">
-                                                <label for="name">Ім'я:</label>
-                                                <input type="text" id="name" name="name" required>
-                                                
-                                                <label for="phone">Телефон:</label>
-                                                <input type="tel" id="phone" name="phone" required>
-                                                
-                                                <button type="submit">Надіслати</button>
-                                            </div>
-                                        </form>
+                                <div class="desc_sub">
+                                    <div class="desc_text">
+                                        <ul>
+                                            <li>Сервер</li>
+                                            <li>15 реле</li>
+                                            <li>10 датчиків</li>
+                                            <li>Табличний дизайн</li>
+                                            <li>Стандартний монтаж</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
+                        <div class="btn_enroll">
+                            <button id="openModalBtn1">Обрати</button>
+                            <div id="myModal" class="modal">
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <h3>Надайте свої данні або<br>подзвоніть нам за телефоном <br>+38 097 369 01 34
+                                    </h3>
+                                    <form id="enrollmentForm" method="post">
+                                        <div class="form-align">
+                                            <label for="name">Ім'я:</label>
+                                            <input type="text" id="name" name="name" required>
 
-                <div class="responsive">
-                    <div class="gallery">
-                        <div class="gallery_img">
-                            <img src="img/enhanced.png" alt="Forest" width="600" height="400">
-                        </div>
-                        <div class="desc">
-                            <div class="desc_head">
-                                <p>Advanced</p>
-                                <p>1 899 $</p>
-                            </div>
-                            <div class="desc_sub">
-                                <div class="desc_text">
-                                    <ul>
-                                        <li>Сервер + UPS</li>
-                                        <li>35 реле</li>
-                                        <li>10 LED контроллерів</li>
-                                        <li>20 датчиків</li>
-                                        <li>Homekit</li>
-                                        <li>Персоналізований дизайн</li>
-                                    </ul>
+                                            <label for="phone">Телефон:</label>
+                                            <input type="tel" id="phone" name="phone" required>
+
+                                            <button id="sendToTelegramButton">Надіслати</button>
+                                        </div>
+                                    </form>
+
                                 </div>
                             </div>
-                            <div class="btn_enroll">
-                                <button id="openModalBtn2">Обрати</button>
-                            </div>
-
                         </div>
                     </div>
                 </div>
 
                 <div class="responsive">
                     <div class="gallery">
-                        <div class="gallery_img">
-                            <img src="img/exclusive.png" alt="Northern Lights" width="600" height="400">
-                        </div>
-                        <div class="desc">
-                            <div class="desc_head">
-                                <p>Ultra</p>
-                                <p>3 399 $</p>
+                        <div class="sumimgdesc">
+                            <div class="gallery_img">
+                                <img src="img/enhanced.png" alt="Forest" width="600" height="400">
                             </div>
-                            <div class="desc_sub">
-                                <div class="desc_text">
-                                    <ul>
-                                        <li>Сервер + UPS</li>
-                                        <li>Настінн панель</li>
-                                        <li>40 реле</li>
-                                        <li>5 приводів штор</li>
-                                        <li>10 LED контроллерів</li>
-                                        <li>30 датчиків</li>
-                                        <li>Homekit + Homepod</li>
-                                        <li>Віденагляд</li>
-                                        <li>Ексклюзивний дизайн</li>
-                                    </ul>
+                            <div class="desc">
+                                <div class="desc_head">
+                                    <p>Advanced</p>
+                                    <p>2 299 $</p>
                                 </div>
-                            </div>
-                            <div class="btn_enroll">
-                                <button id="openModalBtn3">Обрати</button>
-                            </div>
+                                <div class="desc_sub">
+                                    <div class="desc_text">
+                                        <ul>
+                                            <li>Сервер + UPS</li>
+                                            <li>35 реле</li>
+                                            <li>10 LED контроллерів</li>
+                                            <li>20 датчиків</li>
+                                            <li>Homekit</li>
+                                            <li>Персоналізований дизайн</li>
+                                        </ul>
+                                    </div>
+                                </div>
 
+
+                            </div>
+                        </div>
+                        <div class="btn_enroll">
+                            <button id="openModalBtn2">Обрати</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <div class="sumimgdesc">
+                            <div class="gallery_img">
+                                <img src="img/exclusive.png" alt="Northern Lights" width="600" height="400">
+                            </div>
+                            <div class="desc">
+                                <div class="desc_head">
+                                    <p>Ultra</p>
+                                    <p>3 499 $</p>
+                                </div>
+                                <div class="desc_sub">
+                                    <div class="desc_text">
+                                        <ul>
+                                            <li>Сервер + UPS</li>
+                                            <li>Настінн панель</li>
+                                            <li>40 реле</li>
+                                            <li>5 приводів штор</li>
+                                            <li>10 LED контроллерів</li>
+                                            <li>30 датчиків</li>
+                                            <li>Homekit + Homepod</li>
+                                            <li>Віденагляд</li>
+                                            <li>Ексклюзивний дизайн</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="btn_enroll">
+                            <button id="openModalBtn3">Обрати</button>
                         </div>
                     </div>
                 </div>
@@ -319,15 +357,31 @@
                 Created by Sated</div>
             <div class="footer_contacts">
                 <div>Дніпро, Україна <br>
-                    вул. Н.Алексєєнко, 21 <br>
-                    <a href="tel:+380973690134">+380 97 369 01 34</a><br>
-                    <a href="https://t.me/sergiisat">Telegram </a><a href="viber://chat?number=%2B3803690134">Viber</a>
+                    <a href="https://www.google.com/maps?q=вул. Н.Алексєєнко, 21"
+                        onmouseover="this.style.textDecoration='underline'"
+                        onmouseout="this.style.textDecoration='none'" target="_blank">вул. Н.Алексєєнко,
+                        21</a> <br>
+                    <a href="tel:+380973690134" onmouseover="this.style.textDecoration='underline'"
+                        onmouseout="this.style.textDecoration='none'">+380 97 369 01 34</a><br>
+
+                    <a href="https://t.me/sergiisat" onmouseover="this.style.textDecoration='underline'"
+                        onmouseout="this.style.textDecoration='none'">Telegram</a>
+                    <a href="viber://chat?number=%2B3803690134" onmouseover="this.style.textDecoration='underline'"
+                        onmouseout="this.style.textDecoration='none'">Viber</a>
                 </div>
+
             </div>
         </div>
 
     </footer>
     <script src="js/main.js"></script>
+
+
+
+
+
+
+
 </body>
 
 </html>

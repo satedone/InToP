@@ -60,32 +60,31 @@ document.addEventListener("keydown", function(event) {
   }
 });
 
-// "use strict"
 
+document.getElementById('sendToTelegramButton').addEventListener('click', function () {
+  // Зчитайте дані з полів форми
+  var name = document.getElementById('name').value;
+  var phone = document.getElementById('phone').value;
 
+  // Створіть об'єкт з даними, які ви хочете відправити
+  var formData = new FormData();
+  formData.append('name', name);
+  formData.append('phone', phone);
 
+  // Виконайте AJAX-запит і передайте дані форми
+  var xhr = new XMLHttpRequest();
+  xhr.open('POST', './send.php', true);
+  xhr.send(formData);
 
-
-
-const form = document.querySelector('.form');
-form.addEventListener('submit', function (e){
-	e.preventDefault();
-	sendMessage(form);
-})
-
-async function sendMessage(form) {
-	const formData = new FormData(form);
-	if (formData) {
-		const url = './sendmessage.php';
-		const response = await fetch(url, {
-			method: "POST", 
-			body: formData
-		});
-		if (response.ok){
-			form.reset();
-			alert('Form sent!');
-		}else{
-			alert('Error');
-		}
-	}
-}
+  xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4 && xhr.status === 200) {
+          // Отримали успішну відповідь від сервера (HTTP статус 200)
+          var response = xhr.responseText;
+          // Можливо, додайте код для обробки відповіді тут, якщо потрібно
+          console.log(response);
+      } else if (xhr.readyState === 4) {
+          // Виникла помилка під час виконання запиту
+          console.error('Помилка при виконанні запиту до сервера');
+      }
+  };
+});
