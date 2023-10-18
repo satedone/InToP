@@ -7,7 +7,7 @@
         --gray: #7c7c7c;
         --background: #f7f7f7;
         min-width: 300px;
-        font-family: 'Montserrat';
+        font-family: 'Jost';
         background-color: var(--background);
         min-width: 375px;
     }
@@ -52,7 +52,7 @@
     }
 
     .header__logo {
-        font-weight: 500;
+        font-weight: 600;
         font-size: 48px;
         line-height: 72px;
         margin-left: 20px;
@@ -827,7 +827,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 680px;
+        height: 838px;
     }
 
 
@@ -1245,7 +1245,11 @@
         position: relative;
         border-radius: 15px;
     }
-
+    .modal-content h3 {
+        margin-top: 25px;
+        font-size: 16px;
+        line-height: 150%;
+    }
     .form-align button {
         margin-top: 20px;
     }
@@ -1255,29 +1259,29 @@
         position: absolute;
         top: 10px;
         right: 10px;
-        width: 30px;
-        /* Задаємо ширину і висоту для створення квадратного хрестика */
+        width: 30px;      
         height: 30px;
         cursor: pointer;
         font-size: 25px;
-        /* Розмір іконки хрестика (можете змінити за потребою) */
+        line-height: 111%;
 
     }
 
     /* Стилі для анімації при наведенні */
     .close:hover {
         background-color: var(--blue);
-        /* Змінюємо фон на червоний при наведенні */
         border-radius: 50%;
-        /* Робимо фон круглим (опціонально) */
         color: #fff;
-        /* Змінюємо колір тексту на білий при наведенні */
+        
     }
+
+
 
     /* Стилі для форми */
     form {
         text-align: center;
         padding: 20px 0;
+        padding-top: 0;
     }
 
     form input {
